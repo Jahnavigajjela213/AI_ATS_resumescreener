@@ -1,0 +1,166 @@
+2026-03-16 14:10:02 | INFO | backend.main:lifespan:35 | 🚀 Starting AI Resume Screening API...
+2026-03-16 14:10:02 | INFO | backend.model_loader:load_all:47 | Loading models from: C:\Users\girid\OneDrive\Desktop\resume_screening\models\saved
+2026-03-16 14:10:02 | WARNING | backend.model_loader:load_all:53 | Models not found. Running training pipeline...
+2026-03-16 14:10:18 | ERROR | backend.model_loader:_run_training:108 | Training failed:
+--- Logging error in Loguru Handler #1 ---
+Record was: {'elapsed': datetime.timedelta(seconds=5, microseconds=369149), 'exception': None, 'extra': {}, 'file': (name='train_models.py', path='C:\\Users\\girid\\OneDrive\\Desktop\\resume_screening\\models\\train_models.py'), 'function': 'main', 'level': (name='INFO', no=20, icon='\u2139\ufe0f'), 'line': 107, 'message': '\U0001f680 Starting AI Resume Screening - Model Training Pipeline', 'module': 'train_models', 'name': '__main__', 'process': (id=2612, name='MainProcess'), 'thread': (id=5876, name='MainThread'), 'time': datetime(2026, 3, 16, 14, 10, 8, 88815, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800), 'India Standard Time'))}
+Traceback (most recent call last):
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_handler.py", line 206, in emit
+    self._sink.write(str_record)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_simple_sinks.py", line 16, in write
+    self._stream.write(message)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 18: character maps to <undefined>
+--- End of logging error ---
+--- Logging error in Loguru Handler #1 ---
+Record was: {'elapsed': datetime.timedelta(seconds=5, microseconds=425945), 'exception': None, 'extra': {}, 'file': (name='train_models.py', path='C:\\Users\\girid\\OneDrive\\Desktop\\resume_screening\\models\\train_models.py'), 'function': 'main', 'level': (name='INFO', no=20, icon='\u2139\ufe0f'), 'line': 108, 'message': '\U0001f4c1 Models will be saved to: C:\\Users\\girid\\OneDrive\\Desktop\\resume_screening\\models\\saved', 'module': 'train_models', 'name': '__main__', 'process': (id=2612, name='MainProcess'), 'thread': (id=5876, name='MainThread'), 'time': datetime(2026, 3, 16, 14, 10, 8, 145611, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800), 'India Standard Time'))}
+Traceback (most recent call last):
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_handler.py", line 206, in emit
+    self._sink.write(str_record)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_simple_sinks.py", line 16, in write
+    self._stream.write(message)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c1' in position 18: character maps to <undefined>
+--- End of logging error ---
+--- Logging error in Loguru Handler #1 ---
+Record was: {'elapsed': datetime.timedelta(seconds=5, microseconds=426957), 'exception': None, 'extra': {}, 'file': (name='train_models.py', path='C:\\Users\\girid\\OneDrive\\Desktop\\resume_screening\\models\\train_models.py'), 'function': 'main', 'level': (name='INFO', no=20, icon='\u2139\ufe0f'), 'line': 111, 'message': '\n\U0001f4c2 Loading datasets...', 'module': 'train_models', 'name': '__main__', 'process': (id=2612, name='MainProcess'), 'thread': (id=5876, name='MainThread'), 'time': datetime(2026, 3, 16, 14, 10, 8, 146623, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800), 'India Standard Time'))}
+Traceback (most recent call last):
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_handler.py", line 206, in emit
+    self._sink.write(str_record)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_simple_sinks.py", line 16, in write
+    self._stream.write(message)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c2' in position 20: character maps to <undefined>
+--- End of logging error ---
+--- Logging error in Loguru Handler #1 ---
+Record was: {'elapsed': datetime.timedelta(seconds=5, microseconds=472307), 'exception': None, 'extra': {}, 'file': (name='train_models.py', path='C:\\Users\\girid\\OneDrive\\Desktop\\resume_screening\\models\\train_models.py'), 'function': 'main', 'level': (name='INFO', no=20, icon='\u2139\ufe0f'), 'line': 117, 'message': '\n\U0001f9f9 Preprocessing text...', 'module': 'train_models', 'name': '__main__', 'process': (id=2612, name='MainProcess'), 'thread': (id=5876, name='MainThread'), 'time': datetime(2026, 3, 16, 14, 10, 8, 191973, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800), 'India Standard Time'))}
+Traceback (most recent call last):
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_handler.py", line 206, in emit
+    self._sink.write(str_record)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_simple_sinks.py", line 16, in write
+    self._stream.write(message)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f9f9' in position 20: character maps to <undefined>
+--- End of logging error ---
+--- Logging error in Loguru Handler #1 ---
+Record was: {'elapsed': datetime.timedelta(seconds=13, microseconds=730386), 'exception': None, 'extra': {}, 'file': (name='train_models.py', path='C:\\Users\\girid\\OneDrive\\Desktop\\resume_screening\\models\\train_models.py'), 'function': 'main', 'level': (name='INFO', no=20, icon='\u2139\ufe0f'), 'line': 122, 'message': '\n\u2699\ufe0f  Building features...', 'module': 'train_models', 'name': '__main__', 'process': (id=2612, name='MainProcess'), 'thread': (id=5876, name='MainThread'), 'time': datetime(2026, 3, 16, 14, 10, 16, 450052, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800), 'India Standard Time'))}
+Traceback (most recent call last):
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_handler.py", line 206, in emit
+    self._sink.write(str_record)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_simple_sinks.py", line 16, in write
+    self._stream.write(message)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 20-21: character maps to <undefined>
+--- End of logging error ---
+Traceback (most recent call last):
+  File "C:\Users\girid\OneDrive\Desktop\resume_screening\models\train_models.py", line 152, in <module>
+    main()
+  File "C:\Users\girid\OneDrive\Desktop\resume_screening\models\train_models.py", line 128, in main
+    X_train, X_test, y_train, y_test = train_test_split(
+                                       ^^^^^^^^^^^^^^^^^
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\model_selection\_split.py", line 2799, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\model_selection\_split.py", line 1841, in split
+    for train, test in self._iter_indices(X, y, groups):
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\model_selection\_split.py", line 2245, in _iter_indices
+    raise ValueError(
+ValueError: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+
+2026-03-16 14:10:18 | ERROR | backend.model_loader:load_all:94 | Error loading models: Model training failed. Please run 'python models/train_models.py' manually.
+2026-03-23 11:12:16 | INFO | backend.main:lifespan:35 | 🚀 Starting AI Resume Screening API...
+2026-03-23 11:12:16 | INFO | backend.model_loader:load_all:47 | Loading models from: C:\Users\girid\OneDrive\Desktop\resume_screening\models\saved
+2026-03-23 11:12:16 | WARNING | backend.model_loader:load_all:53 | Models not found. Running training pipeline...
+2026-03-23 11:12:27 | ERROR | backend.model_loader:_run_training:108 | Training failed:
+--- Logging error in Loguru Handler #1 ---
+Record was: {'elapsed': datetime.timedelta(seconds=2, microseconds=222565), 'exception': None, 'extra': {}, 'file': (name='train_models.py', path='C:\\Users\\girid\\OneDrive\\Desktop\\resume_screening\\models\\train_models.py'), 'function': 'main', 'level': (name='INFO', no=20, icon='\u2139\ufe0f'), 'line': 107, 'message': '\U0001f680 Starting AI Resume Screening - Model Training Pipeline', 'module': 'train_models', 'name': '__main__', 'process': (id=12884, name='MainProcess'), 'thread': (id=22156, name='MainThread'), 'time': datetime(2026, 3, 23, 11, 12, 18, 982126, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800), 'India Standard Time'))}
+Traceback (most recent call last):
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_handler.py", line 206, in emit
+    self._sink.write(str_record)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_simple_sinks.py", line 16, in write
+    self._stream.write(message)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 18: character maps to <undefined>
+--- End of logging error ---
+--- Logging error in Loguru Handler #1 ---
+Record was: {'elapsed': datetime.timedelta(seconds=2, microseconds=317517), 'exception': None, 'extra': {}, 'file': (name='train_models.py', path='C:\\Users\\girid\\OneDrive\\Desktop\\resume_screening\\models\\train_models.py'), 'function': 'main', 'level': (name='INFO', no=20, icon='\u2139\ufe0f'), 'line': 108, 'message': '\U0001f4c1 Models will be saved to: C:\\Users\\girid\\OneDrive\\Desktop\\resume_screening\\models\\saved', 'module': 'train_models', 'name': '__main__', 'process': (id=12884, name='MainProcess'), 'thread': (id=22156, name='MainThread'), 'time': datetime(2026, 3, 23, 11, 12, 19, 77078, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800), 'India Standard Time'))}
+Traceback (most recent call last):
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_handler.py", line 206, in emit
+    self._sink.write(str_record)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_simple_sinks.py", line 16, in write
+    self._stream.write(message)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c1' in position 18: character maps to <undefined>
+--- End of logging error ---
+--- Logging error in Loguru Handler #1 ---
+Record was: {'elapsed': datetime.timedelta(seconds=2, microseconds=320017), 'exception': None, 'extra': {}, 'file': (name='train_models.py', path='C:\\Users\\girid\\OneDrive\\Desktop\\resume_screening\\models\\train_models.py'), 'function': 'main', 'level': (name='INFO', no=20, icon='\u2139\ufe0f'), 'line': 111, 'message': '\n\U0001f4c2 Loading datasets...', 'module': 'train_models', 'name': '__main__', 'process': (id=12884, name='MainProcess'), 'thread': (id=22156, name='MainThread'), 'time': datetime(2026, 3, 23, 11, 12, 19, 79578, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800), 'India Standard Time'))}
+Traceback (most recent call last):
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_handler.py", line 206, in emit
+    self._sink.write(str_record)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_simple_sinks.py", line 16, in write
+    self._stream.write(message)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c2' in position 20: character maps to <undefined>
+--- End of logging error ---
+--- Logging error in Loguru Handler #1 ---
+Record was: {'elapsed': datetime.timedelta(seconds=2, microseconds=359466), 'exception': None, 'extra': {}, 'file': (name='train_models.py', path='C:\\Users\\girid\\OneDrive\\Desktop\\resume_screening\\models\\train_models.py'), 'function': 'main', 'level': (name='INFO', no=20, icon='\u2139\ufe0f'), 'line': 117, 'message': '\n\U0001f9f9 Preprocessing text...', 'module': 'train_models', 'name': '__main__', 'process': (id=12884, name='MainProcess'), 'thread': (id=22156, name='MainThread'), 'time': datetime(2026, 3, 23, 11, 12, 19, 119027, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800), 'India Standard Time'))}
+Traceback (most recent call last):
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_handler.py", line 206, in emit
+    self._sink.write(str_record)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_simple_sinks.py", line 16, in write
+    self._stream.write(message)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f9f9' in position 20: character maps to <undefined>
+--- End of logging error ---
+--- Logging error in Loguru Handler #1 ---
+Record was: {'elapsed': datetime.timedelta(seconds=10, microseconds=219544), 'exception': None, 'extra': {}, 'file': (name='train_models.py', path='C:\\Users\\girid\\OneDrive\\Desktop\\resume_screening\\models\\train_models.py'), 'function': 'main', 'level': (name='INFO', no=20, icon='\u2139\ufe0f'), 'line': 122, 'message': '\n\u2699\ufe0f  Building features...', 'module': 'train_models', 'name': '__main__', 'process': (id=12884, name='MainProcess'), 'thread': (id=22156, name='MainThread'), 'time': datetime(2026, 3, 23, 11, 12, 26, 979105, tzinfo=datetime.timezone(datetime.timedelta(seconds=19800), 'India Standard Time'))}
+Traceback (most recent call last):
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_handler.py", line 206, in emit
+    self._sink.write(str_record)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\loguru\_simple_sinks.py", line 16, in write
+    self._stream.write(message)
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 20-21: character maps to <undefined>
+--- End of logging error ---
+Traceback (most recent call last):
+  File "C:\Users\girid\OneDrive\Desktop\resume_screening\models\train_models.py", line 152, in <module>
+    main()
+  File "C:\Users\girid\OneDrive\Desktop\resume_screening\models\train_models.py", line 128, in main
+    X_train, X_test, y_train, y_test = train_test_split(
+                                       ^^^^^^^^^^^^^^^^^
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\model_selection\_split.py", line 2799, in train_test_split
+    train, test = next(cv.split(X=arrays[0], y=stratify))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\model_selection\_split.py", line 1841, in split
+    for train, test in self._iter_indices(X, y, groups):
+  File "C:\Users\girid\AppData\Local\Programs\Python\Python312\Lib\site-packages\sklearn\model_selection\_split.py", line 2245, in _iter_indices
+    raise ValueError(
+ValueError: The least populated class in y has only 1 member, which is too few. The minimum number of groups for any class cannot be less than 2.
+
+2026-03-23 11:12:27 | ERROR | backend.model_loader:load_all:94 | Error loading models: Model training failed. Please run 'python models/train_models.py' manually.
