@@ -26,8 +26,9 @@ RUN python models/train_models.py || echo "Training failed, will train at runtim
 # Create log dir
 RUN mkdir -p logs
 
-# Expose ports
-EXPOSE 8000 8501
+# Expose port (Render assigns $PORT dynamically)
+EXPOSE 8501
 
-# Default: start backend
-CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Default: start Streamlit frontend (contains all logic)
+# Render injects $PORT at runtime
+CMD streamlit run frontend/app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
